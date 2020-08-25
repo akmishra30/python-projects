@@ -27,14 +27,14 @@ Arguments :\n
 
     """
 
-    print message
+    print (message)
 
 def print_exception(message):
-    print 'Error Message : ' + message
+    print ('Error Message : ' + message)
     print_help()
 
 def main():
-    print 'Enter main method'
+    print ('Enter main method')
     env = ''
     dir_loc = ''
     action = ''
@@ -50,7 +50,7 @@ def main():
         sys.exit(2)
     
     for opt, arg in opts:
-        print 'option -- ' + opt
+        print ('option -- ' + opt)
         #print 'arg -- ' + arg
         if opt in ('-h', '--help'):
             print_help()
@@ -66,9 +66,9 @@ def main():
             print_help()
             sys.exit()
 
-    print 'Env : ' + env
-    print 'Dir : ' + dir_loc
-    print 'Action : ' + action
+    print ('Env : ' + env)
+    print ('Dir : ' + dir_loc)
+    print ('Action : ' + action)
     
 if __name__ == "__main__":
     main()
